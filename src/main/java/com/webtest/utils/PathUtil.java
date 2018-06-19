@@ -21,6 +21,12 @@ public class PathUtil
 
     return rootFile;
   }
+  
+  public static File getFile(String fileName)
+  {
+    return new File(getRootDir(), fileName);
+  }
+
 
   public static File copyFileToRoot(InputStream input, String fileName)
   {

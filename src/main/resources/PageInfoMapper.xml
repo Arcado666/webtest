@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+类名 -->
+<mapper namespace="org.suren.autotest.platform.mapping.PageInfoMapper">
+	<!--id应该是接口中的方法，结果类型如没有配置别名则应该使用全名称 -->
+	<select id="getAll" resultMap="pageInfoMap">
+		select * from page_info
+	</select>
+	
+	<select id="getAllByProjectId" resultMap="pageInfoMap">
+		select id, project_id, name, url, create_time, remark from page_info where project_id = #{projectId} order by create_time desc
+	</select>
+	
+	<select id="getAllIds">
+		select id, name from page_info
+	</select>
+	
+	<select id="getAllWithContentByProjectId" resultMap="pageInfoMap">
+		select * from page_info where project_id = #{projectId}
+	</select>
+	
+	<select id="getCountByProjectId" resultType="int">
+		select count(*) from page_info where project_id = #{projectId}
+	</select>
+	
+	<insert id="save">
+		<selectKey keyProperty="id" resultType="String" order="BEFORE">
+			SELECT UUID()
+		</selectKey>
+		insert into page_info(id, project_id, name, url, create_time, remark)
+		values (#{id}, #{projectId}, #{name}, #{url}, #{createTime}, #{remark})
+	</insert>
+	
+	<update id="update">
+		update page_info set name = #{name}, url = #{url}, remark = #{remark} where id = #{id}
+	</update>
+	
+	<delete id="delById">
+		delete from page_info where id = #{id}
+	</delete>
+	
+	<select id="getTotalNum" resultType="int">
+		select count(*) from page_info
+	</select>
+	
+	<select id="getById" resultMap="pageInfoMap">
+		select * from page_info where id = #{id}
+	</select>
+	
+	<resultMap type="org.suren.autotest.platform.entity.PageInfo" id="pageInfoMap">
+		<result property="projectId" column="project_id"/>
+		<result property="createTime" column="create_time"/>
+	</resultMap>
+</mapper>

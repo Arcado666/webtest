@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd ">
+	<description>desc</description>
+	<display-name>dd</display-name>
+	<tlib-version>0.0</tlib-version>
+	<short-name>su</short-name>
+	<uri>http://surenpi.com/suren</uri>
+	
+	<tag>
+		<description>descript tag</description>
+		<name>link</name>
+		<tag-class>org.suren.autotest.platform.servlet.LinkTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>href</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>rel</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description>12</description>
+		<name>script</name>
+		<tag-class>org.suren.autotest.platform.servlet.ScriptTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>src</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description></description>
+		<name>anchor</name>
+		<tag-class>org.suren.autotest.platform.servlet.AnchorTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>href</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>cssClass</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>innerHtml</name>
+			<required>false</required>
+		</attribute>
+		
+		<attribute>
+			<description>HTML Standard Attribute</description>
+			<name>lang</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Standard Attribute</description>
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Standard Attribute</description>
+			<name>dir</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>onclick</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>ondblclick</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>onmousedown</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>onmouseup</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>onmouseover</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>onmousemove</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>onmouseout</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>onkeypress</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>onkeyup</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>HTML Event Attribute</description>
+			<name>onkeydown</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description>确认对话框</description>
+		<name>dialog</name>
+		<tag-class>org.suren.autotest.platform.servlet.DialogTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>dialogId</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>ajaxDel</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>callback</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+
+	<tag>
+		<description>表格</description>
+		<name>table</name>
+		<tag-class>org.suren.autotest.platform.servlet.TableTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>title</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>columns</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>buttons</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>api</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>listUri</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+</taglib>

@@ -1,12 +1,12 @@
 package com.webtest.utils;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
 public class StringUtils
 {
-  @SuppressWarnings("rawtypes")
-public static String paramTranslate(Map<String, Object> data, String paramPrefix, String value)
+  public static String paramTranslate(Map<String, Object> data, String paramPrefix, String value)
   {
     String result = value;
 
@@ -150,5 +150,31 @@ public static String paramTranslate(Map<String, Object> data, String paramPrefix
   public static String defaultIfBlank(String text, long numText)
   {
     return defaultIfBlank(text, String.valueOf(numText));
+  }
+
+  public static Map<String, String> toMap(String mapStr)
+  {
+    return toMap(mapStr, ";", ":");
+  }
+
+  public static Map<String, String> toMap(String mapStr, String entrySp, String keySp)
+  {
+    Map columnMap = null;
+    if (mapStr == null)
+    {
+      return columnMap;
+    }
+
+    columnMap = new HashMap();
+    String[] entryArray = mapStr.split(entrySp);
+    for (String entryStr : entryArray)
+    {
+      String[] entry = entryStr.split(keySp);
+      if (entry.length < 2)
+        continue;
+      columnMap.put(entry[0], entry[1]);
+    }
+
+    return columnMap;
   }
 }

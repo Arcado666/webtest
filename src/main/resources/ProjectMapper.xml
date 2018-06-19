@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.suren.autotest.platform.mapping.ProjectMapper">
+	<resultMap type="org.suren.autotest.platform.model.Project" id="projectMap">
+		<result property="ownerId" column="owner_id"/>
+		<result property="createTime" column="create_time"/>
+		<result property="pkgName" column="pkg_name"/>
+	</resultMap>
+	
+	<select id="getById" resultMap="projectMap">
+		select * from project where id = #{id}
+	</select>
+	
+	<select id="getAll" resultMap="projectMap">
+		select * from project
+	</select>
+	
+	<insert id="save">
+		<selectKey keyProperty="id" resultType="String" order="BEFORE">
+			SELECT UUID()
+		</selectKey>
+		
+		insert into project (id, owner_id, name, pkg_name, remark, create_time) values (
+			#{id}, #{ownerId}, #{name}, #{pkgName}, #{remark}, #{createTime}
+		)
+	</insert>
+	
+	<update id="update">
+		update project set name = #{name},
+			remark = #{remark}, pkg_name = #{pkgName}
+		where id = #{id}
+	</update>
+	
+	<delete id="delById">
+		delete from project where id = #{id}
+	</delete>
+</mapper>
