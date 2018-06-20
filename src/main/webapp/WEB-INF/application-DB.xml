@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop-4.1.xsd">
 	<bean id="jdbcDataSource"
-		class="com.webtest.platform.db.SuRenDriverManagerDataSource">
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="${jdbc.driver}" />
 		<property name="url" value="${jdbc.url}" />
 		<property name="username" value="${jdbc.username}" />
@@ -22,7 +22,7 @@
 		<property name="mapperLocations" value="classpath:*Mapper.xml"></property>
 	</bean>
 
-	<bean id="druidDataSource" class="com.webtest.platform.db.SuRenDruidDataSource"
+	<bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
 		<property name="url" value="${jdbc.url}" />
 		<property name="username" value="${jdbc.username}" />
