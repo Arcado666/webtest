@@ -4,11 +4,11 @@ CACHE MANIFEST
 #date: Nov 24 2013
 
 CACHE:
-/phoenix/static/intro/introjs.css
-/phoenix/static/bootstrap/css/bootstrap.min.css
-/phoenix/static/jquery/jquery.min.js
-/phoenix/static/bootstrap/js/bootstrap.min.js
-/phoenix/static/intro/intro.js
+/webtest/static/intro/introjs.css
+/webtest/static/bootstrap/css/bootstrap.min.css
+/webtest/static/jquery/jquery.min.js
+/webtest/static/bootstrap/js/bootstrap.min.js
+/webtest/static/intro/intro.js
 
 NETWORK:
 *.su

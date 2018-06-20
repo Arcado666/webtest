@@ -65,7 +65,7 @@
 	
 	<filter>
 		<filter-name>xssFilter</filter-name>
-		<filter-class>org.suren.autotest.platform.filter.XssFilter</filter-class>
+		<filter-class>com.webtest.platform.filter.XssFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>xssFilter</filter-name>
@@ -74,7 +74,7 @@
 	
 	<filter>
 		<filter-name>dataBaseInit</filter-name>
-		<filter-class>org.suren.autotest.platform.filter.AutoTestFilter</filter-class>
+		<filter-class>com.webtest.platform.filter.AutoTestFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>dataBaseInit</filter-name>

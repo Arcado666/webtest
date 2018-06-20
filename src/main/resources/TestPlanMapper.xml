@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.suren.autotest.platform.mapping.TestPlanMapper">
-	<resultMap type="org.suren.autotest.platform.model.TestPlan" id="testPlanMap">
+<mapper namespace="com.webtest.platform.mapping.TestPlanMapper">
+	<resultMap type="com.webtest.platform.model.TestPlan" id="testPlanMap">
 		<result property="suiteRunnerId" column="suite_runner_id"/>
 		<result property="cronExp" column="cron_exp"/>
 		<result property="createTime" column="create_time"/>

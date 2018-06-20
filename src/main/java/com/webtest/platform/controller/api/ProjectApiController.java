@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import javax.annotation.Resource;
 import javax.validation.Valid;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -46,7 +45,6 @@ import org.springframework.web.multipart.MultipartFile;
 //import org.suren.autotest.platform.util.JAXBUtils;
 //import org.suren.autotest.web.framework.util.StringUtils;
 
-import com.webtest.code.Generator;
 import com.webtest.platform.entity.DataSourceInfo;
 import com.webtest.platform.entity.PageInfo;
 import com.webtest.platform.mapping.DataSourceInfoMapper;
@@ -86,8 +84,8 @@ public class ProjectApiController implements ApplicationContextAware {
 	private SuiteRunnerInfoMapper suiteRunnerInfoMapper;
 	@Autowired
 
-	@Resource(name = "xml_to_java")
-	private Generator codeGenerator;
+//	@Resource(name = "xml_to_java")
+//	private Generator codeGenerator;
 
 	@ApiOperation("项目列表")
 	@RequestMapping(method = RequestMethod.GET)

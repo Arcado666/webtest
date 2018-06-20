@@ -107,7 +107,7 @@
 	
 	<!-- Spring Beans -->
 	<beans:bean id="authSuccessHandler"
-		class="org.suren.autotest.platform.security.AutoTestAuthSuccessHandler">
+		class="com.webtest.platform.security.AutoTestAuthSuccessHandler">
 	</beans:bean>
 	
 	<beans:bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
@@ -123,7 +123,7 @@
 	    <beans:constructor-arg ref="clientDetailsService"/>  
 	</beans:bean> 
 	
-	<beans:bean id="userService" class="org.suren.autotest.platform.security.AutoTestUserDetailsService">
+	<beans:bean id="userService" class="com.webtest.platform.security.AutoTestUserDetailsService">
 	</beans:bean>
 	
 	<beans:bean id="tokenStore" class="org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore">

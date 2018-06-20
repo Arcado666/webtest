@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop-4.1.xsd">
     <!-- 
-    <bean class="org.suren.autotest.platform.job.AutoTestInit" init-method="init"></bean> -->
+    <bean class="com.webtest.platform.job.AutoTestInit" init-method="init"></bean> -->
 	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
 	</bean>
 </beans>

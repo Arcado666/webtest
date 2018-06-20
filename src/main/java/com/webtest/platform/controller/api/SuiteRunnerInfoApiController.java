@@ -24,8 +24,8 @@ import com.webtest.utils.StringUtils;
 
 /**
  * 测试套件管理
- * @author suren
- * @date 2017年1月23日 上午7:38:33
+ * @author 
+ * @date 
  */
 @RestController
 @RequestMapping("/api/suite_runner_infos")

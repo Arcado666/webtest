@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.suren.autotest.platform.mapping.SuiteRunnerLogMapper">
+<mapper namespace="com.webtest.platform.mapping.SuiteRunnerLogMapper">
 	<insert id="save">
 		<selectKey keyProperty="id" resultType="String" order="BEFORE">
 			SELECT UUID()
@@ -38,7 +38,7 @@
 		select * from suite_runner_log where id = #{id}
 	</select>
 	
-	<resultMap type="org.suren.autotest.platform.model.SuiteRunnerLog" id="SuiteRunnerLogMap">
+	<resultMap type="com.webtest.platform.model.SuiteRunnerLog" id="SuiteRunnerLogMap">
 		<result property="suiteRunnerInfoId" column="suite_runner_info_id"/>
 		<result property="triggerUserId" column="trigger_user_id"/>
 		<result property="beginTime" column="begin_time"/>

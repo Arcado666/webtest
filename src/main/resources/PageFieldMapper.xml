@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.suren.autotest.platform.mapping.PageFieldMapper">
-	<resultMap type="org.suren.autotest.platform.entity.PageField"
+<mapper namespace="com.webtest.platform.mapping.PageFieldMapper">
+	<resultMap type="com.webtest.platform.entity.PageField"
 		id="pageField">
 		<result property="type" column="field_type"/>
 		<result property="pageId" column="page_id"/>

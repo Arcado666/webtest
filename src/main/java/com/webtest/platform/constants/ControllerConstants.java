@@ -18,8 +18,8 @@ package com.webtest.platform.constants;
 
 /**
  * Controller层面使用的常量
- * @author suren
- * @date 2017年2月24日 下午4:11:48
+ * @author 
+ * @date 
  */
 public interface ControllerConstants
 {

@@ -37,6 +37,13 @@
 			<version>3.7</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.3</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/commons-collections/commons-collections -->
 		<dependency>
 			<groupId>commons-collections</groupId>
@@ -146,7 +153,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
-			<version>${spring.version}</version>
+			<version>4.3.6.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -336,18 +343,53 @@
 			<version>1.1.0.Final</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.surenpi.autotest/autotest.web.framework -->
+		<dependency>
+			<groupId>com.surenpi.autotest</groupId>
+			<artifactId>autotest.web.framework</artifactId>
+			<version>2.0.0-20170722</version>
+		</dependency>
+
 
 	</dependencies>
 	<build>
+		<finalName>webtest</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<path>/webtest</path>
+					<port>8080</port>
+					<uriEncoding>UTF-8</uriEncoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.3.8.v20160314</version>
+				<configuration>
+					<webAppConfig>
+						<contextPath>/webtest</contextPath>
+						<defaultsDescriptor>src/main/webapp/WEB-INF/web.xml</defaultsDescriptor>
+					</webAppConfig>
+					<httpConnector>
+						<port>80</port>
+					</httpConnector>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--命名空间应该是对应接口的包名+类名 -->
-<mapper namespace="org.suren.autotest.platform.mapping.DataSourceInfoMapper">
+<mapper namespace="com.webtest.platform.mapping.DataSourceInfoMapper">
 	<select id="getAll" resultMap="dataSourceInfoMap">
 		select * from data_source_info
 	</select>
@@ -55,7 +55,7 @@
 		delete from data_source_info where id = #{id}
 	</delete>
 	
-	<resultMap type="org.suren.autotest.platform.entity.DataSourceInfo" id="dataSourceInfoMap">
+	<resultMap type="com.webtest.platform.entity.DataSourceInfo" id="dataSourceInfoMap">
 		<result property="projectId" column="project_id"/>
 		<result property="pageId" column="page_id"/>
 		<result property="createTime" column="create_time"/>

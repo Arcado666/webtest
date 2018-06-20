@@ -19,8 +19,8 @@ package com.webtest.platform.mapping;
 import com.webtest.platform.model.AttachConfig;
 
 /**
- * @author suren
- * @date 2017年2月13日 下午9:22:10
+ * @author 
+ * @date 
  */
 public interface AttachConfigMapper extends BaseMapper<AttachConfig>
 {

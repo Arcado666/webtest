@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.suren.autotest.platform.mapping.OptionsMapper">
-	<resultMap type="org.suren.autotest.platform.model.Options" id="optionsMap">
+<mapper namespace="com.webtest.platform.mapping.OptionsMapper">
+	<resultMap type="com.webtest.platform.model.Options" id="optionsMap">
 		<result property="optKey" column="opt_key"/>
 		<result property="optValue" column="opt_value"/>
 	</resultMap>

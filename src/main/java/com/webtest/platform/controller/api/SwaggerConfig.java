@@ -16,8 +16,8 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * @author suren
- * @date 2017年6月9日 上午8:52:35
+ * @author 
+ * @date 
  */
 @Configuration
 @EnableWebMvc

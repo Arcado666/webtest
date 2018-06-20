@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author suren
- * @date 2017年2月11日 下午9:29:18
+ * @author 
+ * @date 
  */
 @RestController
 @RequestMapping("/api/user_manager")

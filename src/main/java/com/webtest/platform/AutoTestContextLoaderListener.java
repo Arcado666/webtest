@@ -25,8 +25,8 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
 
 /**
- * @author suren
- * @date 2017年1月24日 下午2:05:33
+ * @author 
+ * @date 
  */
 public class AutoTestContextLoaderListener extends ContextLoaderListener
 {

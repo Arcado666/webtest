@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.suren.autotest.platform.mapping.SuiteRunnerInfoMapper">
+<mapper namespace="com.webtest.platform.mapping.SuiteRunnerInfoMapper">
 	<select id="getAll" resultType="SuiteRunnerInfo" resultMap="SuiteRunnerInfoMap">
 		select * from suite_runner_info
 	</select>
@@ -46,7 +46,7 @@
 		delete from suite_runner_info where id = #{id}
 	</delete>
 	
-	<resultMap type="org.suren.autotest.platform.model.SuiteRunnerInfo" id="SuiteRunnerInfoMap">
+	<resultMap type="com.webtest.platform.model.SuiteRunnerInfo" id="SuiteRunnerInfoMap">
 		<result property="projectId" column="project_id"/>
 		<result property="createTime" column="create_time"/>
 	</resultMap>
