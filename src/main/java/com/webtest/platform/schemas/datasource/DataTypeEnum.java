@@ -62,7 +62,7 @@ public enum DataTypeEnum {
 
     /**
      * 
-     * 						groovy��̬��ݣ������ο�http://surenpi.com/?s=groovy��
+     * 						groovy��̬��ݣ������ο�https://mall.sunmi.com/?s=groovy��
      * 					
      * 
      */
@@ -71,7 +71,7 @@ public enum DataTypeEnum {
 
     /**
      * 
-     * 						javascript��̬��ݣ������ο�http://surenpi.com/?s=javascript��
+     * 						javascript��̬��ݣ������ο�https://mall.sunmi.com/?s=javascript��
      * 					
      * 
      */

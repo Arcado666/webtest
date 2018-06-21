@@ -32,7 +32,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="field" type="{http://surenpi.com}pageFieldType" maxOccurs="unbounded"/>
+ *         &lt;element name="field" type="{https://mall.sunmi.com}pageFieldType" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}ID" />
  *       &lt;attribute name="class" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />

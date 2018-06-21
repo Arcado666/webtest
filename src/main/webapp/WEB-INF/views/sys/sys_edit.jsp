@@ -71,11 +71,11 @@
 <%--
  --%>
 <br />
-<span data-step="4" data-intro="您可以通过这里来关注作者和项目" data-position="right">
+<!-- <span data-step="4" data-intro="您可以通过这里来关注作者和项目" data-position="right">
 <iframe src="https://ghbtns.com/github-btn.html?user=LinuxSuRen&repo=autotest.platform&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="250px" height="30px" style="margin-left: 30px;"></iframe><br/>
 <iframe src="https://ghbtns.com/github-btn.html?user=LinuxSuRen&repo=autotest.platform&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="250px" height="30px" style="margin-left: 30px;"></iframe><br/>
 <iframe src="https://ghbtns.com/github-btn.html?user=LinuxSuRen&repo=autotest.platform&type=star&count=true&size=large" frameborder="0" scrolling="0" width="250px" height="30px" style="margin-left: 30px;"></iframe><br/>
-</span>
+</span> -->
 
 <script type="text/javascript">
 function sysHelp(){

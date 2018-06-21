@@ -26,14 +26,14 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="locators" type="{http://surenpi.com}pageFieldLocators" minOccurs="0"/>
+ *         &lt;element name="locators" type="{https://mall.sunmi.com}pageFieldLocators" minOccurs="0"/>
  *       &lt;/sequence>
- *       &lt;attGroup ref="{http://surenpi.com}pageFieldLocatorAttrGroup"/>
+ *       &lt;attGroup ref="{https://mall.sunmi.com}pageFieldLocatorAttrGroup"/>
  *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
  *       &lt;attribute name="data" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="type" type="{http://surenpi.com}fieldTypeEnum" default="input" />
+ *       &lt;attribute name="type" type="{https://mall.sunmi.com}fieldTypeEnum" default="input" />
  *       &lt;attribute name="action" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="strategy" type="{http://surenpi.com}strategyEnum" default="priority" />
+ *       &lt;attribute name="strategy" type="{https://mall.sunmi.com}strategyEnum" default="priority" />
  *       &lt;attribute name="paramPrefix" type="{http://www.w3.org/2001/XMLSchema}string" default="param" />
  *       &lt;attribute name="timeout" type="{http://www.w3.org/2001/XMLSchema}integer" default="0" />
  *     &lt;/restriction>

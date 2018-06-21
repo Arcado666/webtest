@@ -37,10 +37,10 @@ public class SwaggerConfig extends WebMvcConfigurerAdapter
     private ApiInfo buildApiInf()
     {
         return new ApiInfoBuilder()
-                .title("WebUI自动化测试Phoenix平台")
-                .termsOfServiceUrl("https://github.com/LinuxSuRen/phoenix.platform")
-                .description("WebUI自动化测试Phoenix平台")
-                .contact(new Contact("suren", "http://surenpi.com", "zxjlwt@126.com"))
+                .title("商米WebUI自动化测试平台")
+                .termsOfServiceUrl("https://mall.sunmi.com")
+                .description("商米WebUI自动化测试平台")
+                .contact(new Contact("sunmi", "https://mall.sunmi.com", "zhangshiqiang@sunmi.com"))
                 .build();
     }
 }

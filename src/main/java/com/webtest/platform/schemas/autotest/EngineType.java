@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;complexType name="engineType">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="driver" type="{http://surenpi.com}engineTypeDriverEnum" default="chrome" />
+ *       &lt;attribute name="driver" type="{https://mall.sunmi.com}engineTypeDriverEnum" default="chrome" />
  *       &lt;attribute name="remote" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
  *       &lt;attribute name="timeout" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
  *       &lt;attribute name="fullScreen" type="{http://www.w3.org/2001/XMLSchema}boolean" />

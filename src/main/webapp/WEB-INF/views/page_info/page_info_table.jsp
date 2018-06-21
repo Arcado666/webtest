@@ -110,7 +110,7 @@
                 </div>
                 <div class="form-group">
                     <label>地址</label>
-                    <input type="text" class="form-control" name="url" placeholder="http://surenpi.com" required>
+                    <input type="text" class="form-control" name="url" placeholder="https://mall.sunmi.com" required>
                 </div>
                 <div class="form-group">
                     <label>备注</label>

@@ -40,7 +40,7 @@ public class Encryptor
     {
       if (StringUtils.isBlank(secretKey))
       {
-        secretKey = "http://surenpi.com";
+        secretKey = "https://mall.sunmi.com";
       }
 
       encryptor = new Encryptor(algorithm, secretKey);

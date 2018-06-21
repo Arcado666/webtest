@@ -114,7 +114,7 @@ public class DefaultXmlDataSourceGenerator implements Generator {
 
 	private void parse(Document doc) {
 		SimpleNamespaceContext simpleNamespaceContext = new SimpleNamespaceContext();
-		simpleNamespaceContext.addNamespace("ns", "http://surenpi.com");
+		simpleNamespaceContext.addNamespace("ns", "https://mall.sunmi.com");
 
 		XPath xpath = new DefaultXPath("/ns:autotest/ns:includePage");
 		xpath.setNamespaceContext(simpleNamespaceContext);
@@ -162,7 +162,7 @@ public class DefaultXmlDataSourceGenerator implements Generator {
 	private void parse(Document doc, String pagePackage, String pageClsStr, String dataSrc, Element ele)
 			throws Exception {
 		SimpleNamespaceContext simpleNamespaceContext = new SimpleNamespaceContext();
-		simpleNamespaceContext.addNamespace("ns", "http://surenpi.com");
+		simpleNamespaceContext.addNamespace("ns", "https://mall.sunmi.com");
 
 		XPath xpath = new DefaultXPath("/ns:autotest/ns:dataSources/ns:dataSource[@name='" + dataSrc + "']");
 		xpath.setNamespaceContext(simpleNamespaceContext);
@@ -286,7 +286,7 @@ public class DefaultXmlDataSourceGenerator implements Generator {
 			dataSourcesEle.addNamespace(prefix, "http://datasource.surenpi.com");
 			dataSourcesEle.addAttribute("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
 			dataSourcesEle.addAttribute("xsi:schemaLocation",
-					"http://datasource.surenpi.com http://surenpi.com/schema/datasource/autotest.web.framework.datasource.xsd ");
+					"https://mall.sunmi.com http://surenpi.com/schema/datasource/autotest.web.framework.datasource.xsd ");
 		}
 
 		return doc;

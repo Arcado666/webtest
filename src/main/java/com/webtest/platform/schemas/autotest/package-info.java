@@ -5,5 +5,5 @@
 // Generated on: 2017.01.22 at 09:12:09 PM CST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://surenpi.com", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@javax.xml.bind.annotation.XmlSchema(namespace = "https://mall.sunmi.com", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package com.webtest.platform.schemas.autotest;

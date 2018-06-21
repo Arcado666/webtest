@@ -35,7 +35,7 @@ public class RPCUtils
     // Substitute your Dev Key Here
     public static final String DEV_KEY =  "ff698332e128d54e631dd42dae8e9bf70fd6df22b6ab3c057aed052bc1a5e616";
     // Substitute your Server URL Here
-    public static final String SERVER_URL = "http://surenpi.com:8088/testlink/api/xmlrpc.php";    
+    public static final String SERVER_URL = "https://mall.sunmi.com:8088/testlink/api/xmlrpc.php";    
     
     /**
      * report test execution to TestLink API

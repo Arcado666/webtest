@@ -45,7 +45,7 @@
     </div>
 </nav>
     
-<script src='http://git.oschina.net/arch2surenpi/autotest.platform/widget_preview'></script>
+<!-- <script src='http://git.oschina.net/arch2surenpi/autotest.platform/widget_preview'></script> -->
 
 <style>
 .pro_name a{color: #4183c4;}
@@ -74,7 +74,7 @@ $(function(){
 		var pathname = location.pathname;
 		if(!localStorage.getItem(pathname)){
 			sysHelp();
-			localStorage.setItem(pathname, 'http://surenpi.com');
+			localStorage.setItem(pathname, 'https://mall.sunmi.com');
 		}
 	}
 });

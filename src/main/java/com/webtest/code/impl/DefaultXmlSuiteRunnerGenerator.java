@@ -140,7 +140,7 @@ public class DefaultXmlSuiteRunnerGenerator implements Generator {
 
 	private void parse(Document doc) {
 		SimpleNamespaceContext simpleNamespaceContext = new SimpleNamespaceContext();
-		simpleNamespaceContext.addNamespace("ns", "http://surenpi.com");
+		simpleNamespaceContext.addNamespace("ns", "https://mall.sunmi.com");
 
 		XPath xpath = new DefaultXPath("/ns:autotest/ns:includePage");
 		xpath.setNamespaceContext(simpleNamespaceContext);
@@ -206,7 +206,7 @@ public class DefaultXmlSuiteRunnerGenerator implements Generator {
 			dataSourcesEle.addNamespace(prefix, "http://suite.surenpi.com");
 			dataSourcesEle.addAttribute("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
 			dataSourcesEle.addAttribute("xsi:schemaLocation",
-					"http://suite.surenpi.com http://surenpi.com/schema/suite/autotest.web.framework.suite.xsd ");
+					"https://mall.sunmi.com http://surenpi.com/schema/suite/autotest.web.framework.suite.xsd ");
 
 			dataSourcesEle.addAttribute("pageConfig", this.srcCoding);
 			dataSourcesEle.addAttribute("pagePackage", pagePackage);

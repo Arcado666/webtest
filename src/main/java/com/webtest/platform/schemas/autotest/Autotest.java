@@ -29,14 +29,14 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="engine" type="{http://surenpi.com}engineType"/>
- *         &lt;element name="includePage" type="{http://surenpi.com}includePageType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="engine" type="{https://mall.sunmi.com}engineType"/>
+ *         &lt;element name="includePage" type="{https://mall.sunmi.com}includePageType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="pages">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="page" type="{http://surenpi.com}pageType" maxOccurs="unbounded"/>
+ *                   &lt;element name="page" type="{https://mall.sunmi.com}pageType" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *                 &lt;attribute name="pagePackage" type="{http://www.w3.org/2001/XMLSchema}string" />
  *               &lt;/restriction>
@@ -48,7 +48,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="dataSource" type="{http://surenpi.com}dataSourceType" maxOccurs="unbounded"/>
+ *                   &lt;element name="dataSource" type="{https://mall.sunmi.com}dataSourceType" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -199,7 +199,7 @@ public class Autotest {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="dataSource" type="{http://surenpi.com}dataSourceType" maxOccurs="unbounded"/>
+     *         &lt;element name="dataSource" type="{https://mall.sunmi.com}dataSourceType" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -267,7 +267,7 @@ public class Autotest {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="page" type="{http://surenpi.com}pageType" maxOccurs="unbounded"/>
+     *         &lt;element name="page" type="{https://mall.sunmi.com}pageType" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *       &lt;attribute name="pagePackage" type="{http://www.w3.org/2001/XMLSchema}string" />
      *     &lt;/restriction>

@@ -210,8 +210,8 @@ create table suite_runner_log (
 	suite_runner_info_id varchar(36) not null comment '',
 	trigger_user_id varchar(36) not null comment '',
 	message longtext comment '',
-	begin_time timestamp not null comment '开始时间',
-	end_time timestamp not null comment '结束时间',
+	begin_time timestamp not null default  CURRENT_TIMESTAMP comment '开始时间',
+	end_time timestamp not null default  CURRENT_TIMESTAMP comment '结束时间',
 	primary key(id),
 	constraint suite_runner_log_2_info foreign key (suite_runner_info_id)
 	references suite_runner_info (id) on delete restrict,

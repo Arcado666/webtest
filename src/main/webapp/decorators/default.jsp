@@ -30,7 +30,7 @@ $(function(){
 		var pathname = location.pathname;
 		if(!localStorage.getItem(pathname)){
 			sysHelp();
-			localStorage.setItem(pathname, 'http://surenpi.com');
+			localStorage.setItem(pathname, 'https://mall.sunmi.com');
 		}
 	}
 });

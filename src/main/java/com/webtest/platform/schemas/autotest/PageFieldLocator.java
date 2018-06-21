@@ -23,7 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;complexType name="pageFieldLocator">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="name" use="required" type="{http://surenpi.com}pageFieldLocatorTypeEnum" />
+ *       &lt;attribute name="name" use="required" type="{https://mall.sunmi.com}pageFieldLocatorTypeEnum" />
  *       &lt;attribute name="value" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
  *       &lt;attribute name="timeout" type="{http://www.w3.org/2001/XMLSchema}long" />
  *       &lt;attribute name="extend" type="{http://www.w3.org/2001/XMLSchema}string" />
